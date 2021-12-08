@@ -5,7 +5,6 @@ from tkinter import *
 
 def work():
     p = ent.get("1.0","end-1c")
-    print(p)
     im = qrcode.make(p)
     im.save('output.jpg')
     lbp = Label(mainfrm,text="A qr code generated on output.jpg file")
